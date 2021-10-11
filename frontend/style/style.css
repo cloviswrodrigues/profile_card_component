@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark_cyan: hsl(185, 75%, 39%);
+    --very_dark_desaturated_blue: hsl(229, 23%, 23%);
+    --dark_grayish_blue: hsl(227, 10%, 46%);
+    --dark_gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 18px;
+    font-family: Kumbh Sans, sans-serif;
+    font-weight: 400;
+    color: var(--dark_gray);
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark_cyan);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 978px;
+    height: 978px;
+    background-image: url(../assets/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+} */
+
+.card {
+    width: 320px;
+    height: 370px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 5px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.card .top {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    background-image: url(../assets/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .top .user_img {
+    position: relative;
+    margin: auto;
+    top: 90px;
+    width: 100px;
+    height: 100px;
+    border: 5px solid #fff;
+    background-image: url(../assets/image-victor.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.card .profile {
+    width: 100%;
+    padding-top: 2.5rem;
+    text-align: center;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.card .profile h1 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: var(--very_dark_desaturated_blue);
+}
+
+.card .profile h1 span{
+    margin-left: .2rem;
+    color: var(--dark_gray);
+    font-weight: 400;
+}
+
+.card .profile p {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+
+.card .bottom {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.card .bottom ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.bottom ul li h2 {
+    font-size: 1rem;
+    color: var(--very_dark_desaturated_blue);
+}
+
+.bottom ul li p {
+    margin-top: .175rem;
+    font-size: .7rem;
+}
