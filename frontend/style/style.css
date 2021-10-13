@@ -44,11 +44,12 @@ body {
 .background::before {
     content: '';
     position: absolute;
-    transform: translate(-50%, -50%);
     width: 100vw;
     height: 100vh;
     background-image: url(../assets/bg-pattern-top.svg);
+    background-size: 100vh;
     background-repeat: no-repeat;
+    background-position: bottom 50vh right 50vw;
 }
 
 .background::after {
@@ -56,10 +57,10 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    transform: translate(50%, 50%);
     background-image: url(../assets/bg-pattern-bottom.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-repeat: no-repeat;        
+    background-position: top 50vh left 50vw;
 }
 
 .card {
