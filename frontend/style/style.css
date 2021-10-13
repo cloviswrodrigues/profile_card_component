@@ -44,10 +44,9 @@ body {
 .background::before {
     content: '';
     position: absolute;
-    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    width: 978px;
-    height: 978px;
+    width: 100vw;
+    height: 100vh;
     background-image: url(../assets/bg-pattern-top.svg);
     background-repeat: no-repeat;
 }
@@ -55,11 +54,11 @@ body {
 .background::after {
     content: '';
     position: absolute;
-    -webkit-transform: translate(50%, 50%);
+    width: 100vw;
+    height: 100vh;
     transform: translate(50%, 50%);
-    width: 978px;
-    height: 978px;
     background-image: url(../assets/bg-pattern-bottom.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
